@@ -3,7 +3,7 @@ Learning Single SPA angular
 
 git clone https://github.com/renjithkravi16/Learn-SSPA
 
-<div>
+<div style="background-color: red;">
 <h5>cd homeApp/</h5>
 <p>npm install</p>
 <p>npm start</p>
