@@ -16,8 +16,13 @@ npm start
 ```
 
 ```
+cd navApp/
+npm install
+npm start
+```
+
+```
 cd rootApp/
 npx serve -s
 ```
 
-<p>this will deploy to localhost and you will see the localhost url in the terminal window</p>
