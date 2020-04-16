@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as singleSpa from 'single-spa';
 
 @Component({
   selector: 'LA-root',
@@ -10,5 +11,6 @@ export class AppComponent {
 
   loginButtonClick() {
     console.log('123');
+    singleSpa.navigateToUrl('/home');
   }
 }

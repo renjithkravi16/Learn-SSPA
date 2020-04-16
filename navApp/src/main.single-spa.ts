@@ -17,13 +17,10 @@ const lifecycles = singleSpaAngular({
     singleSpaPropsSubject.next(singleSpaProps);
     return platformBrowserDynamic().bootstrapModule(AppModule);
   },
-  template: '<LA-root />',
+  template: '<app-root />',
   Router,
   NgZone: NgZone,
 });
-
-console.log('The registered application has been loaded!');
-
 
 export const bootstrap = lifecycles.bootstrap;
 export const mount = lifecycles.mount;
