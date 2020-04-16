@@ -16,6 +16,12 @@ npm start
 ```
 
 ```
+cd navApp/
+npm install
+npm start
+```
+
+```
 cd rootApp/
 npx serve -s
 ```
