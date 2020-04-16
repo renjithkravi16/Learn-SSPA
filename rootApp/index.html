@@ -12,7 +12,7 @@
         "imports": {
           "loginApp": "http://localhost:4200/main.js",
           "homeApp": "http://localhost:4201/main.js",
-          "navApp": "http://localhost:4202/main.js"
+          "navApp": "http://localhost:4202/main.js",
           "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.1.1/lib/system/single-spa.min.js"
         }
       }
@@ -38,7 +38,7 @@
 
     function showIfnot(routes) {
       return function (location) {
-        return routes.some((route) => location.pathname !== route);
+        return routes.some((route) => location.pathname != route);
       };
     }
     
@@ -52,7 +52,7 @@
       singleSpa.registerApplication(
         'navApp',
         () => System.import('navApp'),
-        showIfnot('/')
+        location => location.pathname.startsWith('/home')
       );
 
       singleSpa.registerApplication(
